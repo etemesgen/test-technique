@@ -25,9 +25,9 @@ const routes = [
         beforeEnter: (to, from, next) => {
           const { isAuthenticated, openAuthModal } = useAuthenticateStore()
           if (!isAuthenticated) {
-            next()
+            next({ name: 'home' })
           } else {
-            next({ name: 'home', params: { lang: to.params.lang } })
+            next()
             openAuthModal()
           }
         },

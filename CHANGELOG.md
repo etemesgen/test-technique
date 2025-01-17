@@ -11,6 +11,7 @@
 
 ### Fixed
 
+- Accès à la page "Favorites" sans connexion.
 - Connexion avec mot de passe.
 - Affichage des biens dans la page de recherche.
 - Accès à la page de recherche sans quartier.

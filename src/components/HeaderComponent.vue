@@ -32,7 +32,7 @@
         outline
         size="md"
         class="q-mr-md"
-        @click="authenticateStore.logoutUser"
+        @click="logOutUser"
       />
       <q-btn
         :label="i18nStore.locale"
@@ -76,5 +76,10 @@ const changeLocale = (lang) => {
     params: { ...route.params, lang: lang },
     query: route.query,
   })
+}
+
+const logOutUser = () => {
+  authenticateStore.logoutUser()
+  router.push({ name: 'home' })
 }
 </script>

@@ -41,3 +41,13 @@
 - Solution : La persistence de la connexion est ajoutée en utilisant le localStorage pour garder l'utilisateur connecté apres l'actualisation de la page.
 
 - Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js).
+
+### 5. Accès à la page "Favorites" sans connexion :
+
+- Problème : L'utilisateur peut accéder à la page des favoris via l'URL sans être connecté.
+
+- Attendu : Bloquer l'accès à cette page si l'utilisateur n'est pas connecté.
+
+- Solution : La redirection vers la page des favoris est bloquée, ainsi redirigé vers la page de d'accueil si l'utilisateur n'est pas connecté.
+
+- Fichiers modifiés : [routes.js](src/router/routes.js), [routes.test.js](test/vitest/__tests__/routes.test.js), [HeaderComponent.vue](src/components/HeaderComponent.vue).
