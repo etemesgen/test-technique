@@ -10,4 +10,4 @@
 
 - Solution : L'ajout d'un quartier en paramètre (filtre) devient optionnel pour accéder à la page de recherche.
 
-- Fichiers modifiés : [routes.js](src/router/routes.js).
+- Fichiers modifiés : [routes.js](src/router/routes.js), [routes.test.js](test/vitest/__tests__/routes.test.js).
