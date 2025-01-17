@@ -6,3 +6,7 @@
 
 - Initialisation du Rapport de test technique.
 - Changelog pour les changements notables apportés à ce projet.
+
+### Fixed
+
+- Acces à la page de recherche sans quartier.

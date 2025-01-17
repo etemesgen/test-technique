@@ -8,6 +8,6 @@
 
 - Attendu : Permettre l'accès à la page de recherche sans quartier.
 
-- Solution :
+- Solution : L'ajout d'un quartier en paramètre (filtre) devient optionnel pour accéder à la page de recherche.
 
-- Fichiers de réference : [some_file](some_file.md), [some_other_file](some_other_file.md).
+- Fichiers modifiés : [routes.js](src/router/routes.js).

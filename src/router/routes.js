@@ -12,7 +12,7 @@ const routes = [
         name: 'home',
       },
       {
-        path: 'search/:search',
+        path: 'search/:search?',
         component: () => import('pages/SearchPage.vue'),
         meta: { title: 'Search' },
         name: 'search',
