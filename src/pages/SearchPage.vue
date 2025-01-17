@@ -80,7 +80,7 @@ const resetMethod = () => {
 
 onMounted(() => {
   filteredAccommodations.value = accommodations.value.filter((accommodation) => {
-    return accommodation.borough === route.params.search
+    return route?.params.search ? accommodation.borough === route.params.search : true
   })
 })
 </script>

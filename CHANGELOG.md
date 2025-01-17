@@ -10,4 +10,5 @@
 
 ### Fixed
 
+- Affichage des biens dans la page de recherche.
 - Accès à la page de recherche sans quartier.
