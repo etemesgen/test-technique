@@ -21,3 +21,13 @@
 - Solution : Le filtre de recherche est réinitialisé pour afficher tous les biens par défaut lorsque aucun quartier n'est sélectionné.
 
 - Fichiers modifiés : [SearchPage.vue](src/pages/SearchPage.vue), [SearchPage.test.js](test/vitest/__tests__/SearchPage.test.js).
+
+### 3. Connexion avec mot de passe :
+
+- Problème : Impossible de se connecter avec un mot de passe correct.
+
+- Attendu : Corriger la logique d'authentification pour valider les identifiants corrects.
+
+- Solution : La logique de comparaison de mots de passe est corrigée pour authentifier l'utilisateur correctement.
+
+- Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js).

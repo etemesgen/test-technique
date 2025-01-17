@@ -19,7 +19,7 @@ export const useAuthenticateStore = defineStore('authenticate', {
   },
   actions: {
     async authenticateUser(user) {
-      if (user.username === process.env.USERNAME_APP && user.password !== process.env.PASSWORD) {
+      if (user.username === process.env.USERNAME_APP && user.password === process.env.PASSWORD) {
         this.user = user
         Notify.create({
           color: 'positive',
