@@ -46,4 +46,16 @@ describe('authenticate-store', () => {
     expect(result).toBeNull()
     expect(store.user).toBeNull()
   })
+
+  it('logs out user', async () => {
+    const store = useAuthenticateStore()
+    const user = { username: 'Admin', password: 'Admin' }
+    process.env.USERNAME_APP = 'Admin'
+    process.env.PASSWORD = 'Admin'
+
+    await store.authenticateUser(user)
+    await store.logoutUser()
+
+    expect(store.user).toBeNull()
+  })
 })

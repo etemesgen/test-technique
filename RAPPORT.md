@@ -31,3 +31,13 @@
 - Solution : La logique de comparaison de mots de passe est corrigée pour authentifier l'utilisateur correctement.
 
 - Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js).
+
+### 4. Connexion persistante :
+
+- Problème : Après connexion, l'utilisateur est déconnecté en actualisant la page.
+
+- Attendu : Assurer une persistance de la connexion après actualisation.
+
+- Solution : La persistence de la connexion est ajoutée en utilisant le localStorage pour garder l'utilisateur connecté apres l'actualisation de la page.
+
+- Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js).

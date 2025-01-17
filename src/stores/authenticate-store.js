@@ -8,7 +8,7 @@ Notify.setDefaults({
 
 export const useAuthenticateStore = defineStore('authenticate', {
   state: () => ({
-    user: null,
+    user: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null,
     authModal: false,
     favorites: [],
   }),
@@ -21,12 +21,14 @@ export const useAuthenticateStore = defineStore('authenticate', {
     async authenticateUser(user) {
       if (user.username === process.env.USERNAME_APP && user.password === process.env.PASSWORD) {
         this.user = user
+        localStorage.setItem('user', JSON.stringify(user))
         Notify.create({
           color: 'positive',
           message: 'You are now logged in!',
         })
         return user
       } else {
+        this.user = null
         Notify.create({
           color: 'negative',
           message: 'Invalid username or password!',
@@ -36,6 +38,7 @@ export const useAuthenticateStore = defineStore('authenticate', {
     },
     async logoutUser() {
       this.user = null
+      localStorage.removeItem('user')
       Notify.create({
         color: 'positive',
         message: 'You are now logged out!',
