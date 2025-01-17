@@ -23,12 +23,11 @@ const routes = [
         meta: { title: 'Favorites' },
         name: 'favorites',
         beforeEnter: (to, from, next) => {
-          const { isAuthenticated, openAuthModal } = useAuthenticateStore()
+          const { isAuthenticated } = useAuthenticateStore()
           if (!isAuthenticated) {
             next({ name: 'home' })
           } else {
             next()
-            openAuthModal()
           }
         },
       },

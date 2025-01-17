@@ -51,3 +51,13 @@
 - Solution : La redirection vers la page des favoris est bloquée, ainsi redirigé vers la page de d'accueil si l'utilisateur n'est pas connecté.
 
 - Fichiers modifiés : [routes.js](src/router/routes.js), [routes.test.js](test/vitest/__tests__/routes.test.js), [HeaderComponent.vue](src/components/HeaderComponent.vue).
+
+### 6. Modal de connexion sur la page "Favorites" :
+
+- Problème : Même connecté, cliquer sur "Favoris" affiche la modal de connexion.
+
+- Attendu : Supprimer l'ouverture de la modal si l'utilisateur est déjà connecté.
+
+- Solution : La modal de connexion n'est pas affichée si l'utilisateur est deja connecté.
+
+- Fichier modifié : [routes.js](src/router/routes.js).

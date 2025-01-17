@@ -11,6 +11,7 @@
 
 ### Fixed
 
+- Modal de connexion sur la page "Favorites" après connexion.
 - Accès à la page "Favorites" sans connexion.
 - Connexion avec mot de passe.
 - Affichage des biens dans la page de recherche.
