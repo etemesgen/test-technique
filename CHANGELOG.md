@@ -4,6 +4,7 @@
 
 ### Fixed
 
+- Enregistrement de recherche.
 - Filtres de loyer min/max.
 
 ### [0.0.1] - 2024-01-17

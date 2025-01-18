@@ -23,4 +23,37 @@ describe('search-store', () => {
 
     expect(result).toEqual(expected)
   })
+
+  it('saves search', () => {
+    const store = useSearchStore()
+
+    const search = {
+      borough: 'Test',
+      category: null,
+      bedrooms: null,
+      min: '1210',
+      max: null,
+    }
+
+    store.saveSearch(search)
+
+    expect(store.savedSearch).toContainEqual(search)
+  })
+
+  it('does not save duplicate search', () => {
+    const store = useSearchStore()
+
+    const search = {
+      borough: 'Test',
+      category: null,
+      bedrooms: null,
+      min: '1210',
+      max: null,
+    }
+
+    store.saveSearch(search)
+    store.saveSearch(search)
+
+    expect(store.savedSearch).toHaveLength(1)
+  })
 })

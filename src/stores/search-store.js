@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import { Notify } from 'quasar'
 
 export const useSearchStore = defineStore('search', {
   state: () => ({
@@ -1353,7 +1354,19 @@ export const useSearchStore = defineStore('search', {
       return filtered
     },
     saveSearch(search) {
-      if (!this.savedSearch.find((item) => item !== search)) this.savedSearch.push(search)
+      const searchIsEmpty = Object.values(search).every((item) => item === null || item === '')
+      if (searchIsEmpty) {
+        Notify.create({
+          color: 'negative',
+          icon: 'error',
+          message: 'Please fill at least one field',
+        })
+        return
+      }
+
+      if (!this.savedSearch.some((item) => JSON.stringify(item) === JSON.stringify(search))) {
+        this.savedSearch.push(search)
+      }
     },
     clearSavedSearch(index) {
       this.savedSearch.splice(index, 1)
