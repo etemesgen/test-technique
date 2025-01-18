@@ -1341,8 +1341,10 @@ export const useSearchStore = defineStore('search', {
       Object.keys(form).forEach((key) => {
         if (form[key] !== null) {
           filtered = filtered.filter((item) => {
-            if (key === 'min' || key === 'max') {
-              return item.price <= form.min && item.price >= form.max
+            if (key === 'min') {
+              return item.price >= form.min
+            } else if (key === 'max') {
+              return item.price <= form.max
             } else return item[key] === form[key]
           })
         }

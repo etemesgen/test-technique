@@ -1,5 +1,11 @@
 ## Tous les changements notables apportés à ce projet seront documentés dans ce dossier.
 
+### [0.0.2] - 2023-01-18
+
+### Fixed
+
+- Filtres de loyer min/max.
+
 ### [0.0.1] - 2024-01-17
 
 ### Added

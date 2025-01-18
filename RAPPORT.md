@@ -61,3 +61,13 @@
 - Solution : La modal de connexion n'est pas affichée si l'utilisateur est deja connecté.
 
 - Fichier modifié : [routes.js](src/router/routes.js).
+
+### 7. Filtres de loyer :
+
+- Problème : Les filtres de loyer ne fonctionnent pas correctement.
+
+- Attendu : Corriger les filtres pour qu'ils filtrent les biens en fonction des critères de loyer sélectionnés.
+
+- Solution : La condition et la logique de filtre de loyer min/max est corrigée pour qu'elle filtre les biens en fonction des critères correctement.
+
+- Fichiers modifiés : [search-store.js](src/stores/search-store.js), [search-store.test.js](test/vitest/__tests__/search-store.test.js)
