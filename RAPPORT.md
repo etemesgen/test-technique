@@ -121,3 +121,13 @@
 - Fichiers modifiés : [CardSavedSearch.vue](src/components/CardSavedSearch.vue), [search-store.test.js](test/vitest/__tests__/search-store.test.js).
 
 - Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/feature/deleteSavedSearch), [Commit](https://github.com/etemesgen/test-technique/commit/9c0694efb0653a9d7ea215893e137226d5b6be76)
+
+### 11. Titre de l’onglet sur la page de recherche :
+
+- Problème : Le titre de l’onglet n’est pas présent sur la page de recherche.
+
+- Attendu : Ajouter un titre pertinent au niveau de l’onglet pour améliorer l’expérience utilisateur.
+
+- Solution : Un onglet rechercher est ajouté dans la barre de navigation pour un meilleur UX (experiénce utilisateur).
+
+- Fichier modifié : [HeaderComponent.vue](src/components/HeaderComponent.vue).

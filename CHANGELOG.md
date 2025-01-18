@@ -4,6 +4,7 @@
 
 ### Added
 
+- Un onglet rechercher dans la barre de navigation.
 - Un bouton de suppression des recherches enregistrées.
 - Branche et Commit lié aux solutions des problèmes dans le rapport.
 

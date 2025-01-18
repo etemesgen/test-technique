@@ -17,6 +17,16 @@
         @click="() => router.push({ name: 'favorites' })"
       />
       <q-btn
+        v-if="route.name !== 'search' && route.name !== 'home'"
+        outline
+        color="black"
+        label="Recherche"
+        size="md"
+        icon="search"
+        class="q-mr-md"
+        @click="() => router.push({ name: 'search' })"
+      />
+      <q-btn
         v-if="!isAuthenticated"
         color="black"
         label="Connexion"
