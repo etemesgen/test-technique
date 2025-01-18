@@ -2,6 +2,10 @@
 
 ### [0.0.2] - 2023-01-18
 
+### Added
+
+- Branche et Commit lié aux solutions des problèmes dans le rapport.
+
 ### Fixed
 
 - Suppression de favoris.

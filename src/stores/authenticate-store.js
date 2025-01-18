@@ -49,7 +49,6 @@ export const useAuthenticateStore = defineStore('authenticate', {
     },
     addToFavorites(favorite) {
       // Check if the favorite already exists
-      console.log(favorite)
       const existingFavorite = this.favorites.find((f) => f.id === favorite.id)
       if (existingFavorite) {
         Notify.create({

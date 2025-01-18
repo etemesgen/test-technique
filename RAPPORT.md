@@ -12,6 +12,8 @@
 
 - Fichiers modifiés : [routes.js](src/router/routes.js), [routes.test.js](test/vitest/__tests__/routes.test.js).
 
+- Branches et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/searchPageAccess), [Commit](https://github.com/etemesgen/test-technique/commit/7c401fa9989cef145ee086357fc853152c3315fa)
+
 ### 2. Affichage des biens dans la recherche :
 
 - Problème : Aucun bien n'est visible si aucun quartier n'est sélectionné.
@@ -21,6 +23,8 @@
 - Solution : Le filtre de recherche est réinitialisé pour afficher tous les biens par défaut lorsque aucun quartier n'est sélectionné.
 
 - Fichiers modifiés : [SearchPage.vue](src/pages/SearchPage.vue), [SearchPage.test.js](test/vitest/__tests__/SearchPage.test.js).
+
+- Branches et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/showAccomodationSearchPage), [Commit](https://github.com/etemesgen/test-technique/commit/a5fa13e3f19c1e48183e38ddeaaf93a6ebe70b7f)
 
 ### 3. Connexion avec mot de passe :
 
@@ -32,6 +36,8 @@
 
 - Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js).
 
+- Branches et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/signIn), [Commit](https://github.com/etemesgen/test-technique/commit/6a72c6b5435bc29ea174d2a4eeb7115d4c947b2c)
+
 ### 4. Connexion persistante :
 
 - Problème : Après connexion, l'utilisateur est déconnecté en actualisant la page.
@@ -41,6 +47,8 @@
 - Solution : La persistence de la connexion est ajoutée en utilisant le localStorage pour garder l'utilisateur connecté apres l'actualisation de la page.
 
 - Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js).
+
+- Branches et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/authPersistence), [Commit](https://github.com/etemesgen/test-technique/commit/61189bbc2710713865f128e795117577af5e83d0)
 
 ### 5. Accès à la page "Favorites" sans connexion :
 
@@ -52,6 +60,8 @@
 
 - Fichiers modifiés : [routes.js](src/router/routes.js), [routes.test.js](test/vitest/__tests__/routes.test.js), [HeaderComponent.vue](src/components/HeaderComponent.vue).
 
+- Branches et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/favoritePageAccess), [Commit](https://github.com/etemesgen/test-technique/commit/4559714c69cfa0e8a12fd59eb3beca13c3eb9b78)
+
 ### 6. Modal de connexion sur la page "Favorites" :
 
 - Problème : Même connecté, cliquer sur "Favoris" affiche la modal de connexion.
@@ -61,6 +71,8 @@
 - Solution : La modal de connexion n'est pas affichée si l'utilisateur est deja connecté.
 
 - Fichier modifié : [routes.js](src/router/routes.js).
+
+- Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/signInModalDisplayFavoritePage), [Commit](https://github.com/etemesgen/test-technique/commit/3a24a4add8e1650cb20fd38d41ebb9615485b083)
 
 ### 7. Filtres de loyer :
 
@@ -72,6 +84,8 @@
 
 - Fichiers modifiés : [search-store.js](src/stores/search-store.js), [search-store.test.js](test/vitest/__tests__/search-store.test.js).
 
+- Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/rentFilter), [Commit](https://github.com/etemesgen/test-technique/commit/099c3a6121d0ee509b373ae99fa86a16225851d9)
+
 ### 8. Enregistrement de recherche :
 
 - Problème : Rien ne se passe lorsqu'un utilisateur connecté clique sur "Enregistrer ma recherche".
@@ -82,6 +96,8 @@
 
 - Fichiers modifiés : [search-store.js](src/stores/search-store.js), [search-store.test.js](test/vitest/__tests__/search-store.test.js).
 
+- Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/tree/fix/saveSearch), [Commit](https://github.com/etemesgen/test-technique/commit/e9dc4a7b18e1eba2607e664c2a37c6bc98a82a05)
+
 ### 9. Suppression de favoris :
 
 - Problème : La suppression d'un favori ne fonctionne pas.
@@ -91,3 +107,5 @@
 - Solution : La fonctionnalité de suppression de favoris est corrigée en passant le tableau contenant les données du bien favoris et non seulement leur id en paramètre de la fonction de suppression.
 
 - Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js), [CardAccommodation.vue](src/components/CardAccommodation.vue).
+
+- Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/tree/fix/deleteFavorite), [Commit](https://github.com/etemesgen/test-technique/commit/a1f818952c8faeb58cfcddae9ec64784d9f33bb8)
