@@ -1,4 +1,4 @@
-## Tous les changements notables apportés à ce projet seront documentés dans ce dossier.
+## Tous les changements notables apportés à ce projet seront documentés dans ce fichier.
 
 ### [0.0.2] - 2023-01-18
 

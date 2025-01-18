@@ -131,3 +131,9 @@
 - Solution : Un onglet rechercher est ajouté dans la barre de navigation pour un meilleur UX (experiénce utilisateur).
 
 - Fichier modifié : [HeaderComponent.vue](src/components/HeaderComponent.vue).
+
+- Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/tabSearchPage), [Commit](https://github.com/etemesgen/test-technique/commit/3c0150a92e009f50731ffe07291a8760ff7e6ef8)
+
+## Conclusion
+
+Toutes les problématiques ci-dessus sont correctement corrigées et fonctionnel.
