@@ -119,3 +119,5 @@
 - Solution : Un bouton de suppression par recherche enregistrée est ajouté et la fonctionnalité de suppression des recherches enregistrées est bien appelée.
 
 - Fichiers modifiés : [CardSavedSearch.vue](src/components/CardSavedSearch.vue), [search-store.test.js](test/vitest/__tests__/search-store.test.js).
+
+- Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/feature/deleteSavedSearch), [Commit](https://github.com/etemesgen/test-technique/commit/9c0694efb0653a9d7ea215893e137226d5b6be76)
