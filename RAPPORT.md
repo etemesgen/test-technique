@@ -109,3 +109,13 @@
 - Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js), [CardAccommodation.vue](src/components/CardAccommodation.vue).
 
 - Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/tree/fix/deleteFavorite), [Commit](https://github.com/etemesgen/test-technique/commit/a1f818952c8faeb58cfcddae9ec64784d9f33bb8)
+
+### 10. Suppression des recherches enregistrées :
+
+- Problème : Le bouton de suppression des recherches enregistrées est manquant.
+
+- Attendu : Ajouter un bouton pour permettre cette suppression et s'assurer que la méthode backend existante soit appelée correctement et qu'elle fonctionne bien.
+
+- Solution : Un bouton de suppression par recherche enregistrée est ajouté et la fonctionnalité de suppression des recherches enregistrées est bien appelée.
+
+- Fichiers modifiés : [CardSavedSearch.vue](src/components/CardSavedSearch.vue), [search-store.test.js](test/vitest/__tests__/search-store.test.js).

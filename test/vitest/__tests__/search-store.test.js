@@ -56,4 +56,21 @@ describe('search-store', () => {
 
     expect(store.savedSearch).toHaveLength(1)
   })
+
+  it('clears saved search', () => {
+    const store = useSearchStore()
+
+    const search = {
+      borough: 'Test',
+      category: null,
+      bedrooms: null,
+      min: '1210',
+      max: null,
+    }
+
+    store.saveSearch(search)
+    store.clearSavedSearch()
+
+    expect(store.savedSearch).toEqual([])
+  })
 })
