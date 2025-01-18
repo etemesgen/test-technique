@@ -4,6 +4,7 @@
 
 ### Fixed
 
+- Suppression de favoris.
 - Enregistrement de recherche.
 - Filtres de loyer min/max.
 

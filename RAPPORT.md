@@ -70,7 +70,7 @@
 
 - Solution : La condition et la logique de filtre de loyer min/max est corrigée pour qu'elle filtre les biens en fonction des critères correctement.
 
-- Fichiers modifiés : [search-store.js](src/stores/search-store.js), [search-store.test.js](test/vitest/__tests__/search-store.test.js)
+- Fichiers modifiés : [search-store.js](src/stores/search-store.js), [search-store.test.js](test/vitest/__tests__/search-store.test.js).
 
 ### 8. Enregistrement de recherche :
 
@@ -80,4 +80,14 @@
 
 - Solution : La fonctionnalité de sauvegarde de recherche est corrigée, si la recherche à enregistrer est vide alerter l'utilisateur.
 
-- Fichiers modifiés : [search-store.js](src/stores/search-store.js), [search-store.test.js](test/vitest/__tests__/search-store.test.js)
+- Fichiers modifiés : [search-store.js](src/stores/search-store.js), [search-store.test.js](test/vitest/__tests__/search-store.test.js).
+
+### 9. Suppression de favoris :
+
+- Problème : La suppression d'un favori ne fonctionne pas.
+
+- Attendu : Corriger la fonctionnalité de suppression des favoris.
+
+- Solution : La fonctionnalité de suppression de favoris est corrigée en passant le tableau contenant les données du bien favoris et non seulement leur id en paramètre de la fonction de suppression.
+
+- Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js), [CardAccommodation.vue](src/components/CardAccommodation.vue).

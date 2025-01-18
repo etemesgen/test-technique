@@ -49,6 +49,7 @@ export const useAuthenticateStore = defineStore('authenticate', {
     },
     addToFavorites(favorite) {
       // Check if the favorite already exists
+      console.log(favorite)
       const existingFavorite = this.favorites.find((f) => f.id === favorite.id)
       if (existingFavorite) {
         Notify.create({
@@ -66,6 +67,7 @@ export const useAuthenticateStore = defineStore('authenticate', {
     },
     removeFromFavorites(favorite) {
       this.favorites = this.favorites.filter((f) => f.id !== favorite.id)
+      this.favorites.splice(favorite, 1)
       Notify.create({
         color: 'positive',
         message: 'Favorite removed!',

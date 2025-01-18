@@ -16,9 +16,13 @@
       dense
       label="Supprimer"
       class="absolute-top-right q-mr-sm"
-      @click.stop="authenticateStore.removeFromFavorites(accommodation?.id)"
+      @click.stop="authenticateStore.removeFromFavorites(accommodation)"
     />
-    <img src="../../public/assets/background.webp" alt="accommodation.title" class="image-accommodation" />
+    <img
+      src="../../public/assets/background.webp"
+      alt="accommodation.title"
+      class="image-accommodation"
+    />
   </q-card-section>
   <q-card-section class="q-py-none">
     <h1 class="text-h5 q-ma-none">
