@@ -44,7 +44,7 @@
 
 - Attendu : Assurer une persistance de la connexion après actualisation.
 
-- Solution : La persistence de la connexion est ajoutée en utilisant le localStorage pour garder l'utilisateur connecté apres l'actualisation de la page.
+- Solution : La persistence de la connexion est ajoutée en utilisant le localStorage pour garder l'utilisateur connecté après l'actualisation de la page.
 
 - Fichiers modifiés : [authenticate-store.js](src/stores/authenticate-store.js), [authenticate-store.test.js](test/vitest/__tests__/authenticate-store.test.js).
 
@@ -128,7 +128,7 @@
 
 - Attendu : Ajouter un titre pertinent au niveau de l’onglet pour améliorer l’expérience utilisateur.
 
-- Solution : Le titre de l'onglet de recherche est bien affiché. Un menu rechercher est ajouté dans la barre de navigation pour un meilleur UX (experiénce utilisateur).
+- Solution : Le titre de l'onglet de recherche est bien affiché. Un menu rechercher est ajouté dans la barre de navigation pour un meilleur UX (expérience utilisateur).
 
 - Fichiers modifiés : [index.js](src/router/index.js), [routes.test.js](test/vitest/__tests__/routes.test.js), [HeaderComponent.vue](src/components/HeaderComponent.vue).
 
