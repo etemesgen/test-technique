@@ -131,3 +131,5 @@
 - Solution : Le titre de l'onglet de recherche est bien affiché. Un menu rechercher est ajouté dans la barre de navigation pour un meilleur UX (experiénce utilisateur).
 
 - Fichiers modifiés : [index.js](src/router/index.js), [routes.test.js](test/vitest/__tests__/routes.test.js), [HeaderComponent.vue](src/components/HeaderComponent.vue).
+
+- Branche et Commit lié : [Branche](https://github.com/etemesgen/test-technique/commits/fix/tabSearchPage), [Commit](https://github.com/etemesgen/test-technique/commit/14697be9fdbda4b54dc9d9b69430f18dcfe3cca4)
