@@ -37,6 +37,7 @@ export default defineRouter(function ({ store }) {
   })
 
   Router.beforeEach((to) => {
+    document.title = to.meta.title || 'Quasar App'
     i18nStore.setLocale(to.params.lang || i18nStore.locale)
   })
   return Router

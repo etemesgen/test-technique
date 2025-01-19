@@ -35,4 +35,21 @@ describe('Router', () => {
     expect(isAuthenticated).toBe(false)
     expect(router.currentRoute.value.name).toBe('home')
   })
+
+  it('should update the document title when navigating to the search page', async () => {
+    const router = createRouter({
+      history: createMemoryHistory(),
+      routes,
+    })
+
+    router.beforeEach((to, from, next) => {
+      document.title = to.meta.title || 'Default Title'
+      next()
+    })
+
+    router.push('/search')
+    await router.isReady()
+
+    expect(document.title).toBe('Search')
+  })
 })

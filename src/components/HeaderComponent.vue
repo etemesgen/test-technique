@@ -17,7 +17,6 @@
         @click="() => router.push({ name: 'favorites' })"
       />
       <q-btn
-        v-if="route.name !== 'search' && route.name !== 'home'"
         outline
         color="black"
         label="Recherche"
