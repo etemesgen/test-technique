@@ -1,20 +1,21 @@
 ## Tous les changements notables apportés à ce projet seront documentés dans ce dossier.
 
-### [0.0.2] - 2023-01-18
+### [0.0.2] - 2025-01-18 - 2025-01-19
 
 ### Added
 
-- Un onglet rechercher dans la barre de navigation.
+- Un menu rechercher dans la barre de navigation.
 - Un bouton de suppression des recherches enregistrées.
 - Branche et Commit lié aux solutions des problèmes dans le rapport.
 
 ### Fixed
 
+- Le titre de l'onglet de recherche est bien affiché.
 - Suppression de favoris.
 - Enregistrement de recherche.
 - Filtres de loyer min/max.
 
-### [0.0.1] - 2024-01-17
+### [0.0.1] - 2025-01-17
 
 ### Added
 

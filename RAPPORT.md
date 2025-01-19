@@ -128,6 +128,6 @@
 
 - Attendu : Ajouter un titre pertinent au niveau de l’onglet pour améliorer l’expérience utilisateur.
 
-- Solution : Un onglet rechercher est ajouté dans la barre de navigation pour un meilleur UX (experiénce utilisateur).
+- Solution : Le titre de l'onglet de recherche est bien affiché. Un menu rechercher est ajouté dans la barre de navigation pour un meilleur UX (experiénce utilisateur).
 
-- Fichier modifié : [HeaderComponent.vue](src/components/HeaderComponent.vue).
+- Fichier modifié : [index.js](src/router/index.js), [HeaderComponent.vue](src/components/HeaderComponent.vue).
